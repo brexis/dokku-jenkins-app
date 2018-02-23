@@ -12,8 +12,8 @@ $ sudo chmod -R 777 /var/run/docker.sock
 $ sudo dokku storage:mount jenkins /var/lib/dokku/data/storage/jenkins:/var/jenkins_home
 $ sudo dokku storage:mount jenkins /var/lib/dokku/data/storage/jenkins_home:/home
 $ sudo dokku storage:mount jenkins /var/run/docker.sock:/var/run/docker.sock
-$ dokku proxy:ports-add jenkins http:8080:8080
-$ dokku proxy:ports-add jenkins http:50000:50000
+$ sudo dokku proxy:ports-add jenkins http:8080:8080
+$ sudo dokku proxy:ports-add jenkins http:50000:50000
 
 # Local
 $ git add remote dokku@host_ip:jenkins
