@@ -16,6 +16,6 @@ $ sudo dokku proxy:ports-add jenkins http:8080:8080
 $ sudo dokku proxy:ports-add jenkins http:50000:50000
 
 # Local
-$ git add remote dokku@host_ip:jenkins
+$ git remote add dokku dokku@host_ip:jenkins
 $ git push origin dokku
 ```
